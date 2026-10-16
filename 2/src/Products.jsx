@@ -28,7 +28,7 @@ const Products = () => {
   };
 
   // BEGIN (write your solution here)
-
+  useEffect(() => {getProducts().then((anotherProducts) => setProducts(anotherProducts))}, [])
   // END
 
   return (
